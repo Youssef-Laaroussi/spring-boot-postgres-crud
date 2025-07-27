@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url:   jdbc:postgresql://localhost:5432/bibliotheque_db    # À remplacer
+    username:           # nom base donnee
+    password:      # mot de  pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: true  # Clé corrigée (au lieu de use-new-id-generator-mappings)
+
+
+
+
